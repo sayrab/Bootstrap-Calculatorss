@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Caculator</title>
+	<style type="text/css">
+		.buttons{
+			width:100px;
+			height: 100px;
+		}
+		#btn-area{
+            position: absolute;
+            top: 40%;
+            left: 40%;
+		}
+		.res-area{
+            position: absolute;
+            left: 29%;
+            top:10%;
+            border: 1px solid #ececec;
+            width: 500px;
+            height:100px;
+		}
+		#results{
+           padding: 10px;
+           text-align: center;
+           font-family: arial;
+		}
+	</style>
+</head>
+<body>
+	<div class="res-area">
+	<h1 id="results"></h1>
+    </div>
+<script>
+function addition() {
+    var first = prompt("Please enter first value", "");
+    var second = prompt("Please enter second value", "");
+    results = +first + +second;
+    if (first != null && second != null) {
+        document.getElementById("results").innerHTML =
+        "The value is " + results;
+    }
+}
+function subtract() {
+    var first = prompt("Please enter first value", "");
+    var second = prompt("Please enter second value", "");
+    results = +first - +second;
+    if (first != null && second != null) {
+        document.getElementById("results").innerHTML =
+        "The value is " + results;
+    }
+}
+function multiply() {
+    var first = prompt("Please enter first value", "");
+    var second = prompt("Please enter second value", "");
+    results = +first * +second;
+    if (first != null && second != null) {
+        document.getElementById("results").innerHTML =
+        "The value is " + results;
+    }
+}
+function divid() {
+    var first = prompt("Please enter first value", "");
+    var second = prompt("Please enter second value", "");
+    results = +first * +second;
+    if (first != null && second != null) {
+        document.getElementById("results").innerHTML =
+        "The value is " + results;
+    }
+}
+
+</script>
+<div id="btn-area">
+<button class="buttons" onclick="addition()"><b>Addition</b></button>
+<button class="buttons" onclick="subtract()"><b>Subtraction</b></button>
+<br/>
+<button class="buttons" onclick="multiply()"><b>Multiplication</b></button>
+<button class="buttons" onclick="divid()"><b>Division</b></button>
+
+</div>
+</body>
+</html>
